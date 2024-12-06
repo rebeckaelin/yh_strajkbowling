@@ -5,7 +5,7 @@
 Strajk bowling är en nyöppnad bowlinghall i centrala Bromölla. Ägaren K. Ägla gillar tekniska lösningar och har tillsammans med brorsonen Keso Ägla byggt denna webbapp.
 Herr Ägla är väldigt nöjd med appen men vill försäkra sig om att den är fortsatt stabil när ny funktionalitet läggs till framöver. Ditt uppdrag är att skriva unit tester med React testing library som sen kan köras för att testa av all funktionalitet när man gör en push till Github.
 
-Du hittar de user stories som har implementerats nedan och som de ska skrivas tester för. Du behöver dock skriva acceptanskriterier för varje user story.
+Du hittar de user stories som har implementerats nedan och som de ska skrivas tester för. Koden hittar du i mappen `Strajk bowling`.
 
 ## User stories
 
