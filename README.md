@@ -52,7 +52,8 @@ Du hittar de user stories som har implementerats nedan och som de ska skrivas te
 **Acceptanskriterier:**
 
 - Användaren ska kunna navigera från bokningsvyn till bekräftelsevyn när bokningen är klar.
-- Om användaren navigerar till bekräftelsevyn och ingen bokning är gjord ska texten "Ingen bokning gjord visas".
+- Om användaren navigerar till bekräftelsevyn och ingen bokning är gjord eller finns i `session storage` ska texten "Ingen bokning gjord visas".
+- Om användaren navigerar till bekräftelsevyn och det finns en bokning sparad i `session storage` ska denna visas.
 
 ## Betygskriterier
 
