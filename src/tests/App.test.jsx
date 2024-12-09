@@ -1,8 +1,7 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { vi, it, describe, expect } from "vitest";
-import Booking from "../views/Booking.jsx";
+import { it, describe, expect } from "vitest";
+
 import App from "../App.jsx";
-import { MemoryRouter } from "react-router-dom";
 
 describe("App component", () => {
   it("should generate a booking number and calculate the total price", async () => {

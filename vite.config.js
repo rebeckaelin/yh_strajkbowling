@@ -10,7 +10,7 @@ export default defineConfig({
     provider: "v8",
     coverage: {
       reportsDirectory: "./coverage",
-      reporter: ["text", "html"],
+      reporter: ["text"],
       all: true,
       include: ["src/**/*.jsx"],
       exclude: [
