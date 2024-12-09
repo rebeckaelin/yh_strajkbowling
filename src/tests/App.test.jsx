@@ -42,15 +42,12 @@ describe("App component", () => {
   });
 
   it("should load confirmation from sessionStorage", async () => {
-    console.log(sessionStorage.getItem("confirmation"));
-
     render(<App />);
     const navButton = screen.getAllByRole("img")[0];
     fireEvent.click(navButton);
 
     const confirmationLink = screen.getByText(/Confirmation/i);
     fireEvent.click(confirmationLink);
-    screen.debug();
     expect(await screen.findByText("Sweet, let's go!")).toBeInTheDocument();
   });
 
