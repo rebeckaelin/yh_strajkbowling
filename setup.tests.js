@@ -5,12 +5,7 @@ import "@testing-library/jest-dom/vitest";
 
 beforeAll(() => server.listen());
 
-beforeEach(() => {
-  // sessionStorage.clear();
-});
-
 afterEach(() => {
-  // vi.restoreAllMocks();
   cleanup();
 });
 

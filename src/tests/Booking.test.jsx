@@ -2,9 +2,6 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { vi, it, describe, expect } from "vitest";
 import Booking from "../views/Booking";
 import { MemoryRouter } from "react-router-dom";
-import App from "../App.jsx";
-import Confirmation from "../views/Confirmation";
-import Navigation from "../components/Navigation/Navigation";
 
 describe("Booking component", () => {
   it("should be able to reserve a lane on a specific date and time", () => {
@@ -41,7 +38,6 @@ describe("Booking component", () => {
         <Booking />
       </MemoryRouter>
     );
-    // screen.debug();
     const bookingButton = screen.getByText(/strIIIIIike!/i);
     fireEvent.click(bookingButton);
     const errorMessage = await screen.findByText(
