@@ -125,9 +125,9 @@ function Booking() {
       shoes: shoes.map((shoe) => shoe.size),
     };
 
-    console.log(!error);
+    // console.log(!error);
 
-    console.log(bookingInfo);
+    // console.log(bookingInfo);
 
     const confirmation = await sendBooking(bookingInfo);
     await saveConfirmation(confirmation);

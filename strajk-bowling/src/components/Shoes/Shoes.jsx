@@ -8,7 +8,11 @@ function Shoes({ updateSize, addShoe, removeShoe, shoes }) {
     const label = `Shoe size / person ${index + 1}`;
     const shoeInput = (
       <article className="shoes__form" key={input.id}>
+        <label htmlFor={input.id} className="input__label">
+          {label}
+        </label>
         <Input
+          id={input.id}
           label={label}
           type="text"
           customClass="shoes__input"
