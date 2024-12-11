@@ -49,6 +49,9 @@ describe("App component", () => {
     const confirmationLink = screen.getByText(/Confirmation/i);
     fireEvent.click(confirmationLink);
     expect(await screen.findByText("Sweet, let's go!")).toBeInTheDocument();
+    expect(await screen.findByDisplayValue("4")).toBeInTheDocument();
+    expect(await screen.findByDisplayValue("2")).toBeInTheDocument();
+    expect(await screen.findByText("680 sek")).toBeInTheDocument();
   });
 
   it("should be able to see a message that no reservations are made", async () => {
